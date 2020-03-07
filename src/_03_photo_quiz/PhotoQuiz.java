@@ -28,7 +28,7 @@ public class PhotoQuiz {
 		// “Copy Image Address”)
 
 		// 2. create a variable of type "Component" that will hold your image
-
+String Component=("https://pm1.narvii.com/6864/dae48a3fb515e88ff63430597c11e8d0571d363er1-800-450v2_hq.jpg");
 		// 3. use the "createImage()" method below to initialize your Component
 
 		// 4. add the image to the quiz window
