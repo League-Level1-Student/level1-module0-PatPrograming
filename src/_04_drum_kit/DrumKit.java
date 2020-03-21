@@ -5,6 +5,7 @@ package _04_drum_kit;
  */
 
 import java.applet.AudioClip;
+import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -25,18 +26,19 @@ public class DrumKit implements MouseListener {
 	public void run() throws MalformedURLException {
 
 		// 1. Make a JFrame variable and initialize it using "new JFrame()"
-
+JFrame myFrame=new JFrame();
 		// 2. Make the frame visible and
 		// set its default close operation to JFrame.EXIT_ON_CLOSE
-
+myFrame.setVisible(true);
+myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 3. Set the size of the frame
-
+myFrame.setPreferredSize(new Dimension(500,500));
 		// 4. Set the title of the frame
-
+myFrame.setTitle("DrumKit");
 		// 5. Make a JPanel variable and initialize it using "new JPanel().
-
+JPanel myPanel=new JPanel();
 		// 6. Add the panel to the frame. (The panel is invisible.)
-
+myFrame.add(myPanel);
 		// 7. Download an image of a drum from the Internet. Drop it into your
 		// Eclipse project under "default package".
 
