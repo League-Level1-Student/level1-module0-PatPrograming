@@ -22,6 +22,7 @@ import javax.swing.JPanel;
 public class DrumKit implements MouseListener {
 
 	JLabel drumLabelWithImage;
+	JLabel cymbalLabelWithImage;
 
 	public void run() throws MalformedURLException {
 
@@ -32,7 +33,7 @@ JFrame myFrame=new JFrame();
 myFrame.setVisible(true);
 myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 3. Set the size of the frame
-myFrame.setPreferredSize(new Dimension(500,500));
+myFrame.setPreferredSize(new Dimension(1200,700));
 		// 4. Set the title of the frame
 myFrame.setTitle("DrumKit");
 		// 5. Make a JPanel variable and initialize it using "new JPanel().
@@ -43,28 +44,35 @@ myFrame.add(myPanel);
 		// Eclipse project under "default package".
 
 		// 8. Put the name of your image file in a String variable.
-
+String cymbal=("cymbal.jpg");
 		// 9. Edit the next line to use your String variable
 		// drumLabelWithImage = createLabelImage(drumImageString);
-
+cymbalLabelWithImage = createLabelImage(cymbal);
 		// 10. Add the image to the panel
-
+myPanel.add(cymbalLabelWithImage);
 		// 11. Set the layout of the panel to "new GridLayout()"
-
+myPanel.setLayout(new GridLayout());
 		// 12. call the pack() method on the frame. Run your program. Do you see
 		// your drum image?
-
+myFrame.pack();
 		// 13. add this mouse listener to drumLabelWithImage
-
+cymbalLabelWithImage.addMouseListener(this);
 		// 18. Add more images to make a drumkit. Remember to add this mouse
 		// listener to each one.
+String drum=("drum.jpg");
+drumLabelWithImage = createLabelImage(drum);
+myPanel.add(drumLabelWithImage);
+myPanel.setLayout(new GridLayout());
+myFrame.pack();
+drumLabelWithImage.addMouseListener(this);
+
 
 	}
 
 	public void mouseClicked(MouseEvent e) {
 		// 14. Print "mouse clicked" to the console. Run your program and watch
 		// the console to see when this is printed.
-
+System.out.println("mouse clicked");
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label
 														// that the mouse
 														// clicked on
@@ -74,7 +82,12 @@ myFrame.add(myPanel);
 		// leagueofamazing/code4life.
 
 		// 16. If they clicked on the drumImage...
-
+if(drumClicked.equals(drumLabelWithImage)) {
+	playSound("drum.wav");
+}
+if(drumClicked.equals(cymbalLabelWithImage)) {
+	playSound("cymbal.wav");
+}
 		// 17. ...use the playSound method to play a drum sound. Test to see if
 		// it works
 
