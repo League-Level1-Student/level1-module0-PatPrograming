@@ -1,0 +1,44 @@
+1. Write a method to support the code below, that prints "The League rocks" when it is called.
+
+weRock(); //prints "The League rocks"
+A: 
+public static void weRock(){
+print("The League rocks");
+}
+2. Write a method to support the code below, that takes a name as a parameter and prints that they rock.
+
+rocker("Bob"); //prints "Bob rocks"
+A:
+public static void rocker(string name){
+print(name+"rocks")
+}
+3. Write a method to support the code below, that takes a name as a parameter and adds " is awesome" if the name is your favorite singer, 
+but " is annoying " if it is someone else.
+
+truth("Rob Thomas"); //prints "Rob Thomas is awesome"
+truth("Justin Bieber"); //prints "Justin Bieber is annoying"
+A:
+public static void truth(string name){
+if (name.equals("Rob Thomas")){
+print(name+ " is awesome");
+}
+else{
+print(name+ " is annoying.");
+}
+}
+4. Write a method to support the code below, that takes a word as a parameter and prints it twice.
+
+echo("hello"); //prints "hello hello"
+A:
+public static void echo(string word){
+for (i=0;i<2;i++){
+print(word)
+}
+}
+5. Write a method to support the code below, that takes a word and a number as parameters and prints the word a number of times.
+
+repeat("mayday", 4); //prints "mayday mayday mayday mayday"
+A:
+public static void repeat(string word,int){
+
+}
