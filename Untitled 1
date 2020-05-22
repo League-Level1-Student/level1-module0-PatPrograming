@@ -1,0 +1,28 @@
+1. Call these methods. Make sure to catch the result if they return something.
+
+
+       void eat (String food) {}
+ eat("food");
+       double getDinnerTime(){}
+double food=getDinnerTime();
+       String getFavoriteFood(String personsName){}
+getFavoriteFood("Patrick");
+       void chomp(){}
+chomp();
+       boolean isTasty(){}
+boolean hi=isTasty()
+
+2. Now do the opposite…. create method signatures for these calls.
+
+JFrame getWindow(){}
+       JFrame window = getWindow();
+int getNumberOfPizzaSlicesLeft(){}
+       int slices = getNumberOfPizzaSlicesLeft();
+String getFavoriteVegetable(String Mom){}
+       String faveVeggie = getFavoriteVegetable(“Mom”);
+void peel(String potato);
+       peel(“potato”);
+boolean isHealthy(String food){}
+       boolean healthyOrNot = isHealthy(“avocado”);
+void simmer(String soup){}
+       simmer(“soup”);
